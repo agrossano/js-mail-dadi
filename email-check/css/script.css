@@ -8,6 +8,11 @@ body {
   font-family: monospace;
 }
 
+.text-white {
+  color: white;
+}
+
+
 .container {
   display: flex;
   justify-content: center;
