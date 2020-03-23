@@ -2,17 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
 
-    <h2 id="lancio-uno"></h2>
-    <h2 id='lancio-due'></h2>
-    <h1 id='winner'></h1>
+    <div class="container">
+      <div class="screen">
+          <div class="bg-overlay">
+            <pre>___.                 .__   __
+\_ |__   ____   ____ |  |_/  |_  ___________  _____
+ | __ \ /  _ \ /  _ \|  |\   __\/ __ \_  __ \/     \
+ | \_\ (  &lt;_&gt; |  &lt;_&gt; )  |_|  | \  ___/|  | \/  Y Y  \
+ |___  /\____/ \____/|____/__|  \___  &gt;__|  |__|_|  /
+     \/                             \/   v. 0.1   \/
+          </pre>
+            <div class="command-line">
+              <div class="left">
+                <h1 id="user"></h1>
+                <br>
+                <h1 id="lancio-uno"></h1>
+                <h1 id="lancio-due"></h1>
+                <h1 id="winner"></h1>
+                <h1 id="cursor"> &#9608;</h1>
+              </div>
 
+              <h1 id="time"></h1>
+            </div>
 
-    <script src="js/main.js" type="text/javascript">
+          </div>
+          <img src="img/imageproxy.png" alt="">
 
-    </script>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/boolterm.js" charset="utf-8"></script>
   </body>
 </html>

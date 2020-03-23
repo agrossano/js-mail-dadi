@@ -3,26 +3,16 @@
 // dichiaro variabili
 var listaMail, mailFornita, check, msg;
 
-// assegno il valore false al check di controllo
-check = false;
-
 // creo array con email
 listaMail = ['huangbo@chan.com','nansen@killscat.com', 'not@enlightened.io','zhaozhou@void.net']
 
 // chiedo all'utente il suo indirizzo email
 mailFornita = prompt('Qual è la tua mail?')
 
-// TENTATIVO INTERNO AL CICLO FOR
-// verifico che l'email fornita sia presente all'interno dell'array
-// for (i = 0; i < listaMail.length; i++) {
-//   console.log(listaMail[i]);
-//   if (mailFornita === listaMail[i]) {
-//     msg = 'La tua mail è presente. Accesso consentito.';
-//   } else if (mailFornita !== listaMail[i]) {
-//     msg = 'La tua mail non è presente. Accesso non consentito.';
-//   }
-// }
+// SOLUZIONE CON VERIFICA ESTERNA AL CICLO
 
+// assegno il valore false al check di controllo
+check = false;
 
 // verifico che l'email fornita sia presente all'interno dell'array
 for (i = 0; i < listaMail.length; i++) {
@@ -40,3 +30,19 @@ if (check) {
 }
 
 document.getElementById('mail-check').innerHTML = msg;
+
+
+/*
+** SOLUZIONE CON VERIFICA INTERNA AL CICLO
+** verifico che l'email fornita sia presente all'interno dell'array
+*
+** for (i = 0; i < listaMail.length; i++) {
+**   console.log(listaMail[i]);
+**   if (mailFornita === listaMail[i]) {
+**     msg = 'La tua mail è presente. Accesso consentito.';
+**     break;
+**   } else if (mailFornita !== listaMail[i]) {
+**     msg = 'La tua mail non è presente. Accesso non consentito.';
+**   }
+** }
+*/
