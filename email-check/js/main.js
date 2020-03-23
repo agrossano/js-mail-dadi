@@ -24,9 +24,9 @@ for (i = 0; i < listaMail.length; i++) {
 
 // se il check ritorna true consento l'accesso, altrimenti lo nego
 if (check) {
-  msg = 'La mail è presente nella lista. Accesso consentito.';
+  msg = 'Accesso consentito.';
 } else {
-  msg = 'La tua mail non è presente nella lista. Accesso non consentito';
+  msg = 'Mail non in lista. Accesso non consentito';
 }
 
 document.getElementById('mail-check').innerHTML = msg;
